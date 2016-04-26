@@ -2,7 +2,7 @@
   font-family: "Open Sans", sans-serif; }
 
 nav {
-  background-color: black;
+  background-color: #363636;
   color: white; }
   nav a {
     text-decoration: none;
@@ -53,21 +53,6 @@ header {
     .controls div img {
       height: 6vh; }
 
-.services {
-  text-align: center; }
-  .services ul {
-    margin: 0;
-    padding: 0; }
-  .services li {
-    display: inline-block;
-    text-decoration: none;
-    margin: 0;
-    padding: 0; }
-    .services li img {
-      height: 15vh; }
-    .services li p {
-      text-align: center; }
-
 .above-slider {
   position: absolute;
   top: 0;
@@ -82,5 +67,38 @@ header {
     font-size: 5rem; }
   .above-slider p {
     font-size: 3rem; }
+
+.services, .features, .downloads, .contribution, .keep-in {
+  text-align: center; }
+
+.services {
+  background-color: #fefefe; }
+  .services ul {
+    margin: 0;
+    padding: 0; }
+  .services li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0; }
+    .services li img {
+      height: 15vh; }
+    .services li p {
+      text-align: center; }
+
+.features {
+  background-color: #4b82d8; }
+
+.downloads {
+  background-color: #fefefe; }
+
+.contribution {
+  background-color: #ffc000; }
+
+.keep-in {
+  background-color: #fefefe; }
+
+footer {
+  background-color: #363636; }
 
 /*# sourceMappingURL=style.css.map */
