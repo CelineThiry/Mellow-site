@@ -1,6 +1,12 @@
 *, body, .container {
   font-family: "Open Sans", sans-serif; }
 
+h1 {
+  margin-top: 0; }
+
+ul {
+  margin-bottom: 0; }
+
 nav {
   background-color: #363636;
   color: white; }
@@ -69,10 +75,14 @@ header {
     font-size: 3rem; }
 
 .services, .features, .downloads, .contribution, .keep-in {
-  text-align: center; }
+  text-align: center;
+  padding-top: 5vw;
+  padding-bottom: 5vw; }
 
 .services {
   background-color: #fefefe; }
+  .services h1 {
+    margin-top: 0; }
   .services ul {
     margin: 0;
     padding: 0; }
@@ -88,17 +98,76 @@ header {
 
 .features {
   background-color: #4b82d8; }
+  .features h1 {
+    margin-top: 0; }
+  .features ul {
+    padding-left: 0;
+    list-style-type: none;
+    padding-bottom: 5vh; }
 
 .downloads {
   background-color: #fefefe; }
+  .downloads h1 {
+    margin-top: 0; }
+  .downloads ul {
+    padding-left: 0;
+    list-style-type: none;
+    padding-bottom: 5vh;
+    margin-bottom: 0; }
 
 .contribution {
   background-color: #ffc000; }
+  .contribution h1 {
+    margin-top: 0; }
+  .contribution a {
+    margin-bottom: 0; }
 
 .keep-in {
   background-color: #fefefe; }
+  .keep-in h1 {
+    margin-top: 0; }
+  .keep-in ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding-bottom: 5vh;
+    text-align: center; }
+  .keep-in li {
+    display: inline-block; }
+  .keep-in img {
+    height: 3vw; }
 
 footer {
-  background-color: #363636; }
+  background-color: #363636;
+  color: white; }
+  footer ul {
+    list-style-type: none;
+    padding-left: 0; }
+  footer li {
+    display: inline-block;
+    padding-right: 5vw; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+
+.cat {
+  display: block;
+  background-color: #fff;
+  line-height: 3rem;
+  width: fit-content;
+  padding: 0 2vw 0 2vw;
+  margin: 0 auto 2vw auto;
+  text-align: center;
+  border-radius: 3rem;
+  text-decoration: none;
+  color: black; }
+  .cat:hover {
+    background-color: blue;
+    color: white;
+    -webkit-transition: background-color .45s ease, color .45s ease;
+    -moz-transition: background-color .45s ease, color .45s ease;
+    -ms-transition: background-color .45s ease, color .45s ease;
+    -o-transition: background-color .45s ease, color .45s ease;
+    transition: background-color .45s ease, color .45s ease; }
 
 /*# sourceMappingURL=style.css.map */
