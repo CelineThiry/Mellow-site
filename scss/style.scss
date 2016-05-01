@@ -103,31 +103,71 @@ header{
 	text-align: center;
 	padding-top: 5vw;
 	padding-bottom: 5vw;
+	font-weight: 400;
+	h1 {
+		font-size: 6vw;
+		font-family: $open;
+		font-weight: 100;
+	}
+	p{
+		font-size: 1.5vw;
+	}
 }
 .services{
 	background-color: #fefefe;
 	h1{
 		margin-top: 0;
 	}
+	>p{
+		max-width: 40%;
+		margin: auto;
+		margin-bottom: 40px;
+	}
 	ul{
-		margin: 0;
-		padding: 0;
+		// margin: 0;
+		padding-left: 0;
 	}
 	li{
 		display: inline-block;
 		text-decoration: none;
-		margin: 0;
-		padding: 0;
+		// margin: 0;
+		padding-left: 0;
+		margin-top: 40px;
 		img{
 			height: 15vh;
+			min-height: 125px;
 		}
 		p{
 			text-align: center;
 		}
+		a{
+			text-decoration: none;
+			>p{
+				color: black;
+			}
+		}
 	}
 }
 
+.your-favorite-service{
+	background-color: lightgrey;
+	height: 125px;
+	width: 125px;
+	margin: auto;
+	border-radius: 50%;
+	p{
+		color: white;
+		margin: 0;
+		text-decoration: none;
+		line-height: 125px;
+		font-size: 3rem;
+		font-weight: 700;
+	}
+
+}
+
 .features{
+	color: white;
 	background-color: #4b82d8;
 	h1{
 		margin-top: 0;
@@ -137,6 +177,16 @@ header{
 		list-style-type: none;
 		padding-bottom: 5vh;
 	}
+	h2{
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+.compare-table .column {
+	color: black;
+    background-color: white;
+    border: solid 2px #4b82d8;
 }
 
 .downloads{
@@ -150,15 +200,31 @@ header{
 		padding-bottom: 5vh;
 		margin-bottom: 0;
 	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	>p{
+		max-width: 40%;
+		margin: auto;
+		margin-bottom: 40px;
+	}
 }
 
 .contribution{
+	color: white;
 	background-color: #ffc000;
 	h1{
 		margin-top: 0;
 	}
 	a{
-		margin-bottom: 0;
+		margin-top: 20px;
+	}
+	>div{
+		max-width: 40%;
+		margin: auto;
+		margin-bottom: 4
 	}
 }
 
@@ -185,18 +251,31 @@ header{
 footer{
 	background-color: #363636;
 	color: white;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
 	ul{
 		list-style-type: none;
 		padding-left: 0;
+		margin-top: 0;
 	}
 	li{
 		display: inline-block;
 		padding-right: 5vw;
+
 	}
 	a{
 		color: white;
 		text-decoration: none;
+		line-height: 1rem;
 
+	}
+}
+
+.credits{
+	font-size: 0.8rem;
+	font-weight: 100;
+	p{
+		line-height: 1rem;
 	}
 }
 

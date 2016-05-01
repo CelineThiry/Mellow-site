@@ -77,26 +77,56 @@ header {
 .services, .features, .downloads, .contribution, .keep-in {
   text-align: center;
   padding-top: 5vw;
-  padding-bottom: 5vw; }
+  padding-bottom: 5vw;
+  font-weight: 400; }
+  .services h1, .features h1, .downloads h1, .contribution h1, .keep-in h1 {
+    font-size: 6vw;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100; }
+  .services p, .features p, .downloads p, .contribution p, .keep-in p {
+    font-size: 1.5vw; }
 
 .services {
   background-color: #fefefe; }
   .services h1 {
     margin-top: 0; }
+  .services > p {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 40px; }
   .services ul {
-    margin: 0;
-    padding: 0; }
+    padding-left: 0; }
   .services li {
     display: inline-block;
     text-decoration: none;
-    margin: 0;
-    padding: 0; }
+    padding-left: 0;
+    margin-top: 40px; }
     .services li img {
-      height: 15vh; }
+      height: 15vh;
+      min-height: 125px; }
     .services li p {
       text-align: center; }
+    .services li a {
+      text-decoration: none; }
+      .services li a > p {
+        color: black; }
+
+.your-favorite-service {
+  background-color: lightgrey;
+  height: 125px;
+  width: 125px;
+  margin: auto;
+  border-radius: 50%; }
+  .your-favorite-service p {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    line-height: 125px;
+    font-size: 3rem;
+    font-weight: 700; }
 
 .features {
+  color: white;
   background-color: #4b82d8; }
   .features h1 {
     margin-top: 0; }
@@ -104,6 +134,14 @@ header {
     padding-left: 0;
     list-style-type: none;
     padding-bottom: 5vh; }
+  .features h2 {
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.compare-table .column {
+  color: black;
+  background-color: white;
+  border: solid 2px #4b82d8; }
 
 .downloads {
   background-color: #fefefe; }
@@ -114,13 +152,25 @@ header {
     list-style-type: none;
     padding-bottom: 5vh;
     margin-bottom: 0; }
+  .downloads a {
+    text-decoration: none;
+    color: black; }
+  .downloads > p {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 40px; }
 
 .contribution {
+  color: white;
   background-color: #ffc000; }
   .contribution h1 {
     margin-top: 0; }
   .contribution a {
-    margin-bottom: 0; }
+    margin-top: 20px; }
+  .contribution > div {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 4; }
 
 .keep-in {
   background-color: #fefefe; }
@@ -139,16 +189,26 @@ header {
 
 footer {
   background-color: #363636;
-  color: white; }
+  color: white;
+  padding-top: 5vw;
+  padding-bottom: 5vw; }
   footer ul {
     list-style-type: none;
-    padding-left: 0; }
+    padding-left: 0;
+    margin-top: 0; }
   footer li {
     display: inline-block;
     padding-right: 5vw; }
   footer a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 1rem; }
+
+.credits {
+  font-size: 0.8rem;
+  font-weight: 100; }
+  .credits p {
+    line-height: 1rem; }
 
 .cat {
   display: block;
