@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<title>Mellow Player</title>
 	<meta name="description" content="MellowPlayer is a free, open source and cross-platform desktop application for listening to your favorite streaming music sites.">
 	<link rel="stylesheet" href="css/style.css">
@@ -20,7 +21,12 @@
 						<h1><img src="img/img_mellow-icon.svg" alt="Logo Mellow Player">MellowPlayer</h1>
 					</a>
 				</div>
-				<ul class="menu expand column align-right">
+				<div class="burger-icon-container column">			
+							<div class="burger">
+								<div class="icon"></div>	
+							</div>				
+				</div>
+				<ul class="menu expand column align-right my-desktop-menu">
 					<li><a href="">supported services</a></li>
 					<li><a href="">features</a></li>
 					<li><a href="">downloads</a></li>
@@ -52,35 +58,35 @@
 			<h1>Supported services</h1>
 			<p>The following web-based music streaming services are supported by MellowPlayer.</p>
 			<ul class="row align-center">
-				<li class="column small-3">
+				<li class="column large-3 small-6">
 					<img src="img/mellowicons_spotify.svg" alt="">
 					<p>Spotify</p>
 				</li>
-				<li class="column small-3">
+				<li class="column large-3 small-6">
 					<img src="img/mellowicons_deezer.svg" alt="">
 					<p>Deezer</p>
 				</li>
-				<li class="column small-3">
+				<li class="column large-3 small-6">
 					<img src="img/mellowicons_mixcloud.svg" alt="">
 					<p>Mixcloud</p>
 				</li>
-				<li class="column small-3">
+				<li class="column large-3 small-6">
 					<img src="img/mellowicons_soundcloud.svg" alt="">
 					<p>Soundcloud</p>
 				</li>
-				<li class="column small-3">
+				<li class="column large-3 small-6">
 					<img src="img/mellowicons_ledjam.svg" alt="">
 					<p>LeDjam</p>
 				</li>
-				<li class="column small-3">
+				<li class="column large-3 small-6">
 					<img src="img/mellowicons_8tracks.svg" alt="">
 					<p>8tracks</p>
 				</li>
-				<li class="column small-3">
+				<li class="column large-3 small-6">
 					<img src="img/mellowicons_tunein.svg" alt="">
 					<p>Tune in</p>
 				</li>
-				<li class="column small-3">
+				<li class="column large-3 small-6">
 					<a href="">
 						<div class="your-favorite-service"><p>?</p></div>
 						<p>Your favorite service ?</p>
@@ -91,19 +97,19 @@
 		<section class="features">
 			<h1>Features</h1>
 			<ul class="row align-center">
-				<li class="column small-4">
+				<li class="column large-4 small-12">
 					<img src="img/features-picto_open-source.svg" alt="">
 					<h2>Open-source</h2>
 					<p>Software for which the original source code is made freely available and may be redistributed and modified.</p>
 					<a href="" class="cat">Want to contribute ?</a>
 				</li>
-				<li class="column small-4">
+				<li class="column large-4 small-12">
 					<img src="img/features-picto_cross-02.svg" alt="">
 					<h2>Cross-platform</h2>
 					<p>Available on Windows, Mac OSX and GNU/Linux</p>
 					<a href="" class="cat">Download the app !</a>
 				</li>
-				<li class="column small-4">
+				<li class="column large-4 small-12">
 					<img src="img/features-picto_plugin.svg" alt="">
 					<h2>Plugin</h2>
 					<p>Plugin based application, you can extend the app or add support for new service by writing a plugin.</p>
@@ -211,6 +217,7 @@
 
 	<script src="js/jquery-1.12.2.min.js"></script>
 	<script src="js/slider.js"></script>
+	<script src="js/script.js"></script>
 	
 </body>
 </html>

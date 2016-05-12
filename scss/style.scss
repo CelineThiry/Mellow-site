@@ -15,7 +15,8 @@ ul{
 nav{
 	background-color: #363636;
 	color: white;
-
+	min-height: 80px;
+	
 	a{
 		text-decoration: none;
 		color: white;
@@ -30,6 +31,7 @@ nav{
 		width: 4vw;
 		vertical-align: middle;
 		padding: 1vw 1vw 1vw 0;
+		min-width: 40px;
 	}
 	h1{
 		float: left;
@@ -37,6 +39,80 @@ nav{
 		// line-height: 3.5rem;
     	font-weight: 200;
     	font-size: 1.5rem;
+	}
+}
+/* MENU BURGER */
+
+.burger-icon-container{	
+	// background-color: transparent;	
+	width: 30px;
+	// height: 30px;
+	// float: left;
+	cursor: pointer;
+}
+
+.burger{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	float: right;
+	// background-color: transparent;	
+
+		.icon{
+		position: absolute;
+		height: 2px;
+		width: 30px;
+		top: 13px;
+		background-color: white;
+		transition: all 1s cubic-bezier(.19,1,.22,1);
+		// right: .9375rem;
+
+		&:before{
+			content:"";
+			position: absolute;
+			height: 2px;
+			width: 30px;
+			top: -10px;
+			background-color: white;
+			transform-origin: 50% 50%;
+    		transform: rotate(0deg);
+			transition: transform 1s cubic-bezier(.19,1,.22,1);
+		}
+
+		&:after{
+			content:"";
+			position: absolute;
+			height: 2px;
+			width: 30px;
+			top: 10px;
+			background-color: white;
+   		 	transform-origin: 50% 50%;
+    		transform: rotate(0deg);
+			transition: transform 1s cubic-bezier(.19,1,.22,1);
+		}
+	}
+}
+
+.burger-icon-container{
+	display: none;
+}
+
+/* BURGER ACTIVE */
+
+.burger.active{	
+
+		.icon{				
+		background-color: transparent;
+			
+		&:before{			
+			top: 0px;				
+    		transform: rotate(-45deg);			
+		}
+
+		&:after{			
+			top: 0px;				
+    		transform: rotate(45deg);	
+		}
 	}
 }
 
@@ -305,6 +381,36 @@ footer{
 		    -ms-transition: background-color .45s ease, color .45s ease;
 		     -o-transition: background-color .45s ease, color .45s ease;
 		        transition: background-color .45s ease, color .45s ease;
+	}
+}
+
+/* MEDIA QUERY */
+@media (max-width: 800px) {
+	.menu.my-desktop-menu.active{
+		display:block;
+		position: absolute;
+		top: 80px;
+		// padding-top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;	
+		background-color: #363636;
+		z-index: 1;	
+	}
+	.menu.my-desktop-menu{
+		display:none;		
+	}
+	.burger-icon-container{
+		display: block;
+	}
+	.services h1, .features h1, .downloads h1, .contribution h1, .keep-in h1 {
+	    font-size: 9vw;
+	}
+	.services p, .features p, .downloads p, .contribution p, .keep-in p {
+	    font-size: 5vw;
+	}
+	.services > p {
+	    max-width: 90%;	    
 	}
 }
 
