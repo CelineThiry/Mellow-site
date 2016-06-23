@@ -71,15 +71,6 @@ nav {
   display: none; }
 
 /* BURGER ACTIVE */
-.burger.active .icon {
-  background-color: transparent; }
-  .burger.active .icon:before {
-    top: 0px;
-    transform: rotate(-45deg); }
-  .burger.active .icon:after {
-    top: 0px;
-    transform: rotate(45deg); }
-
 .menu {
   text-transform: uppercase; }
   .menu a {
@@ -101,6 +92,7 @@ header {
   position: relative; }
 
 .controls {
+  display: none;
   position: absolute;
   bottom: 2vh;
   left: 0vw;
@@ -119,8 +111,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  min-height: 650px;
+  min-height: 100vh;
   background-color: rgba(75, 130, 216, 0.7);
   text-align: center;
   color: white; }
@@ -247,6 +238,20 @@ header {
     text-align: center; }
   .keep-in li {
     display: inline-block; }
+  .keep-in a {
+    opacity: 1;
+    -webkit-transition: opacity .30s ease-out;
+    -moz-transition: opacity .30s ease-out;
+    -ms-transition: opacity .30s ease-out;
+    -o-transition: opacity .30s ease-out;
+    transition: opacity .30s ease-out; }
+    .keep-in a:hover {
+      opacity: 0.5;
+      -webkit-transition: opacity .30s ease-in;
+      -moz-transition: opacity .30s ease-in;
+      -ms-transition: opacity .30s ease-in;
+      -o-transition: opacity .30s ease-in;
+      transition: opacity .30s ease-in; }
   .keep-in img {
     height: 3vw;
     min-height: 40px; }
@@ -267,6 +272,8 @@ footer {
     color: white;
     text-decoration: none;
     line-height: 1rem; }
+    footer a:hover {
+      text-decoration: underline; }
 
 .credits {
   font-size: 0.8rem;
@@ -304,7 +311,8 @@ footer {
     right: 0;
     width: 100vw;
     background-color: #363636;
-    z-index: 1; }
+    z-index: 1;
+    padding-bottom: 1rem; }
 
   .menu.my-desktop-menu {
     display: none; }
@@ -327,11 +335,48 @@ footer {
   .compare-table .row {
     margin-left: .925rem;
     margin-right: .925rem; } }
+@media (min-width: 800px) {
+  .contribution a {
+    width: -moz-fit-content; }
+
+  .compare-table {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
 @media (max-width: 400px) {
   .compare-table p {
     font-size: 0.7rem; }
 
   .services > p, .features > p, .downloads > p, .contribution > div, .keep-in > p {
-    max-width: 90%; } }
+    max-width: 90%; }
+
+  .above-slider {
+    min-height: 70vh; }
+    .above-slider h1 {
+      font-size: 2rem;
+      padding: 1rem; }
+    .above-slider p {
+      font-size: 1rem;
+      padding: 1rem; }
+
+  div.slider {
+    min-height: 70vh; } }
+@media (min-width: 400px) and (max-width: 980px) {
+  .above-slider {
+    min-height: 60vh; }
+    .above-slider h1 {
+      font-size: 4rem;
+      padding: 1rem; }
+    .above-slider p {
+      font-size: 2rem;
+      padding: 1rem; }
+
+  header div.slider {
+    min-height: 60vh; } }
+@media (min-width: 300px) and (max-width: 400px) {
+  footer li {
+    display: block; }
+
+  .credits {
+    font-size: 0.75rem; } }
 
 /*# sourceMappingURL=style.css.map */

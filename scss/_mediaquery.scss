@@ -1,0 +1,105 @@
+/* MEDIA QUERY */
+@media (max-width: 800px) {
+	.menu.my-desktop-menu.active{
+		display:block;
+		position: absolute;
+		top: 80px;
+		// padding-top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;	
+		background-color: #363636;
+		z-index: 1;	
+		padding-bottom: 1rem;
+	}
+	.menu.my-desktop-menu{
+		display:none;		
+	}
+	.burger-icon-container{
+		display: block;
+	}
+	.services h1, .features h1, .downloads h1, .contribution h1, .keep-in h1 {
+	    font-size: 3rem;
+	}
+	.services p, .features p, .downloads p, .contribution p, .keep-in p {
+	    font-size: 1rem;
+	}
+	// .services > p, .downloads > p, .contribution > div, .keep-in > p  {
+	//     max-width: 90%;	    
+	// }
+	.cat{
+		
+		width: -moz-max-content;
+	}
+	.compare-table p{
+		font-size: 0.8rem;		
+	}
+	.compare-table .row{
+		margin-left: .925rem;
+		margin-right: .925rem;
+	}
+}
+
+@media (min-width: 800px){
+	.contribution a{
+		width: -moz-fit-content;
+	}
+	.compare-table{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.compare-table p{
+		font-size: 0.7rem;		
+	}
+	.services > p, .features > p, .downloads > p, .contribution > div, .keep-in > p  {
+	    max-width: 90%;	    
+	}
+	
+	// Adjust title size
+	.above-slider {		
+		min-height: 70vh;
+		h1 {
+	    font-size: 2rem;
+	    padding: 1rem;
+		}
+		p {
+	    font-size: 1rem;
+	    padding: 1rem;
+		}
+	}
+
+	div.slider{
+		min-height: 70vh;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 980px){
+	// Adjust title size
+	.above-slider {		
+		min-height: 60vh;
+		h1 {
+	    font-size: 4rem;
+	    padding: 1rem;
+		}
+		p {
+	    font-size: 2rem;
+	    padding: 1rem;
+		}
+	}
+
+	header div.slider{
+		min-height: 60vh;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 400px){
+	footer li{
+		display: block;
+	}
+	.credits{
+		font-size: 0.75rem;
+	}
+}
