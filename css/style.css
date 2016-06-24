@@ -10,16 +10,27 @@ ul {
 nav {
   background-color: #363636;
   color: white;
-  min-height: 80px; }
+  color: #FFF;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5; }
   nav a {
     text-decoration: none;
     color: white; }
+
+.fixed {
+  position: fixed;
+  background-color: rgba(54, 54, 54, 0.95); }
+  .fixed .logo-home img {
+    padding: 0 10px 0 0;
+    width: 50px; }
 
 .logo-home img {
   display: inline-block;
   /* float: left; */
   padding-right: 1vw;
-  width: 4vw;
+  width: 64px;
   vertical-align: middle;
   padding: 1vw 1vw 1vw 0;
   min-width: 40px; }
@@ -89,7 +100,8 @@ nav {
     background-color: white; }
 
 header {
-  position: relative; }
+  position: relative;
+  margin-top: 109.2px; }
 
 .controls {
   display: none;
@@ -111,8 +123,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
-  background-color: rgba(75, 130, 216, 0.7);
+  min-height: 600px;
+  background-color: rgba(75, 130, 216, 0.9);
   text-align: center;
   color: white; }
   .above-slider h1 {
@@ -124,13 +136,27 @@ header {
     max-width: 62.5rem;
     margin-top: 0; }
 
+.slider {
+  width: 100%;
+  overflow: hidden;
+  /*height: 100vh;*/
+  min-height: 600px;
+  position: relative; }
+  .slider img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    max-width: 300%;
+    min-width: 100%;
+    height: 100%; }
+
 .services, .features, .downloads, .contribution, .keep-in {
   text-align: center;
   padding-top: 5vw;
   padding-bottom: 5vw;
   font-weight: 400; }
   .services h1, .features h1, .downloads h1, .contribution h1, .keep-in h1 {
-    font-size: 6vw;
+    font-size: 5rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 100; }
   .services p, .features p, .downloads p, .contribution p, .keep-in p {
@@ -154,7 +180,7 @@ header {
     padding-left: 0;
     margin-top: 40px; }
     .services li img {
-      height: 10vw;
+      max-height: 128px;
       min-height: 100px; }
     .services li p {
       text-align: center; }
@@ -165,12 +191,10 @@ header {
 
 .your-favorite-service {
   background-color: lightgrey;
-  height: 10vw;
-  width: 10vw;
-  min-height: 100px;
-  min-width: 100px;
+  height: 128px;
+  width: 128px;
   margin: auto;
-  border-radius: 50%; }
+  border-radius: 100%; }
   .your-favorite-service p {
     color: white;
     margin: 0;
@@ -191,6 +215,9 @@ header {
   .features h2 {
     text-transform: uppercase;
     font-weight: 700; }
+  .features img {
+    max-height: 128px;
+    min-height: 100px; }
 
 .compare-table .column {
   color: black;
@@ -213,6 +240,32 @@ header {
     max-width: 40%;
     margin: auto;
     margin-bottom: 40px; }
+  .downloads img {
+    max-height: 128px;
+    min-height: 100px;
+    cursor: pointer; }
+  .downloads .hidden-section {
+    background-color: rgba(75, 130, 216, 0.9);
+    color: white; }
+    .downloads .hidden-section pre {
+      color: black; }
+    .downloads .hidden-section img {
+      max-height: 50px;
+      min-height: 30px;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 50%; }
+  .downloads .distributions {
+    margin-bottom: 30px;
+    border: 1px solid #fff; }
+
+.highlight-bash {
+  border: 1px solid #e1e4e5;
+  padding: 0px;
+  overflow-x: auto;
+  background: #fff;
+  margin: 1px 0 24px 0; }
 
 .contribution {
   color: white;
@@ -226,54 +279,47 @@ header {
     margin: auto;
     margin-bottom: 4; }
 
-.keep-in {
-  background-color: #fefefe; }
-  .keep-in h1 {
-    margin-top: 0; }
-  .keep-in ul {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style-type: none;
-    padding-bottom: 5vh;
-    text-align: center; }
-  .keep-in li {
-    display: inline-block; }
-  .keep-in a {
-    opacity: 1;
-    -webkit-transition: opacity .30s ease-out;
-    -moz-transition: opacity .30s ease-out;
-    -ms-transition: opacity .30s ease-out;
-    -o-transition: opacity .30s ease-out;
-    transition: opacity .30s ease-out; }
-    .keep-in a:hover {
-      opacity: 0.5;
-      -webkit-transition: opacity .30s ease-in;
-      -moz-transition: opacity .30s ease-in;
-      -ms-transition: opacity .30s ease-in;
-      -o-transition: opacity .30s ease-in;
-      transition: opacity .30s ease-in; }
-  .keep-in img {
-    height: 3vw;
-    min-height: 40px; }
-
 footer {
   background-color: #363636;
   color: white;
-  padding-top: 5vw;
-  padding-bottom: 5vw; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   footer ul {
     list-style-type: none;
     padding-left: 0;
     margin-top: 0; }
   footer li {
     display: inline-block;
-    padding-right: 5vw; }
+    padding-right: 25px; }
   footer a {
     color: white;
     text-decoration: none;
     line-height: 1rem; }
     footer a:hover {
       text-decoration: underline; }
+
+.footer-menu {
+  margin-bottom: 20px; }
+
+.social-media li {
+  padding-right: 10px; }
+.social-media a {
+  opacity: 1;
+  -webkit-transition: opacity .30s ease-out;
+  -moz-transition: opacity .30s ease-out;
+  -ms-transition: opacity .30s ease-out;
+  -o-transition: opacity .30s ease-out;
+  transition: opacity .30s ease-out; }
+  .social-media a:hover {
+    opacity: 0.5;
+    -webkit-transition: opacity .30s ease-in;
+    -moz-transition: opacity .30s ease-in;
+    -ms-transition: opacity .30s ease-in;
+    -o-transition: opacity .30s ease-in;
+    transition: opacity .30s ease-in; }
+.social-media img {
+  min-height: 20px;
+  max-height: 32px; }
 
 .credits {
   font-size: 0.8rem;
@@ -306,7 +352,7 @@ footer {
   .menu.my-desktop-menu.active {
     display: block;
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0;
     right: 0;
     width: 100vw;
@@ -319,6 +365,9 @@ footer {
 
   .burger-icon-container {
     display: block; }
+
+  header {
+    margin-top: 75.3667px; }
 
   .services h1, .features h1, .downloads h1, .contribution h1, .keep-in h1 {
     font-size: 3rem; }
@@ -334,7 +383,13 @@ footer {
 
   .compare-table .row {
     margin-left: .925rem;
-    margin-right: .925rem; } }
+    margin-right: .925rem; }
+
+  .gnu-linux.row.align-center {
+    padding: 0 30px 0 30px; }
+
+  .logo-home img {
+    width: 32px; } }
 @media (min-width: 800px) {
   .contribution a {
     width: -moz-fit-content; }
@@ -342,7 +397,7 @@ footer {
   .compare-table {
     padding-left: 1rem;
     padding-right: 1rem; } }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .compare-table p {
     font-size: 0.7rem; }
 
@@ -360,7 +415,7 @@ footer {
 
   div.slider {
     min-height: 70vh; } }
-@media (min-width: 400px) and (max-width: 980px) {
+@media (min-width: 480px) and (max-width: 980px) {
   .above-slider {
     min-height: 60vh; }
     .above-slider h1 {
@@ -371,12 +426,25 @@ footer {
       padding: 1rem; }
 
   header div.slider {
-    min-height: 60vh; } }
+    min-height: 60vh; }
+
+  .gnu-linux.row.align-center {
+    padding: 0 30px 0 30px; } }
 @media (min-width: 300px) and (max-width: 400px) {
   footer li {
     display: block; }
 
+  footer .social-media li {
+    display: inline-block; }
+
   .credits {
     font-size: 0.75rem; } }
+@media (min-width: 1200px) {
+  .slider img {
+    max-width: 600%;
+    height: unset; } }
+@media (width: 980px) {
+  header {
+    margin-top: 105.967px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
 	.menu.my-desktop-menu.active{
 		display:block;
 		position: absolute;
-		top: 80px;
+		top: 70px;
 		// padding-top: 80px;
 		left: 0;
 		right: 0;
@@ -17,6 +17,9 @@
 	}
 	.burger-icon-container{
 		display: block;
+	}
+	header{
+		margin-top: 75.3667px;
 	}
 	.services h1, .features h1, .downloads h1, .contribution h1, .keep-in h1 {
 	    font-size: 3rem;
@@ -38,6 +41,16 @@
 		margin-left: .925rem;
 		margin-right: .925rem;
 	}
+
+	.gnu-linux.row.align-center {
+	    padding: 0 30px 0 30px;
+	}
+
+	.logo-home{
+		img{
+			width: 32px;
+		}
+	}
 }
 
 @media (min-width: 800px){
@@ -48,9 +61,10 @@
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
+
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px){
 	.compare-table p{
 		font-size: 0.7rem;		
 	}
@@ -76,7 +90,7 @@
 	}
 }
 
-@media (min-width: 400px) and (max-width: 980px){
+@media (min-width: 480px) and (max-width: 980px){
 	// Adjust title size
 	.above-slider {		
 		min-height: 60vh;
@@ -90,8 +104,14 @@
 		}
 	}
 
+
+
 	header div.slider{
 		min-height: 60vh;
+	}
+
+	.gnu-linux.row.align-center {
+	    padding: 0 30px 0 30px;
 	}
 }
 
@@ -99,7 +119,24 @@
 	footer li{
 		display: block;
 	}
+	footer .social-media li{
+		display: inline-block;
+	}
 	.credits{
 		font-size: 0.75rem;
 	}
+}
+
+@media (min-width: 1200px){
+	.slider img{
+		max-width: 600%;
+		height: unset;
+	}
+}
+
+@media (width: 980px) {
+	header{
+		margin-top: 105.967px;
+	}
+	
 }
