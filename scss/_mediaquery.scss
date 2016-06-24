@@ -132,6 +132,19 @@
 		max-width: 600%;
 		height: unset;
 	}
+
+}
+
+@media (min-width: 1900px){
+	.slider{
+		min-height: 1200px;
+	}
+	.above-slider{
+		min-height: 1200px;
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+
 }
 
 @media (width: 980px) {

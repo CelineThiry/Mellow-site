@@ -65,6 +65,15 @@ $(document).ready(function() {
                 .top - 64
         }, 1000);
     });
+    //go-to-dl
+    $(".features a:contains('app')").on('click', function(event) {
+        console.log('downloads is cliqued');
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#downloads").offset()
+                .top - 64
+        }, 1000);
+    });
 
     /* Dynamic top menu positioning
      *
