@@ -10,7 +10,6 @@ ul {
 nav {
   background-color: #363636;
   color: white;
-  color: #FFF;
   position: absolute;
   top: 0;
   width: 100%;
@@ -18,10 +17,13 @@ nav {
   nav a {
     text-decoration: none;
     color: white; }
+  nav .logo-home img {
+    padding: 0 10px 0 0;
+    width: 50px; }
 
 .fixed {
   position: fixed;
-  background-color: rgba(54, 54, 54, 0.95); }
+  background-color: #363636; }
   .fixed .logo-home img {
     padding: 0 10px 0 0;
     width: 50px; }
@@ -101,7 +103,7 @@ nav {
 
 header {
   position: relative;
-  margin-top: 109.2px; }
+  margin-top: 72.8px; }
 
 .controls {
   display: none;
@@ -224,6 +226,9 @@ header {
   background-color: white;
   border: solid 2px #4b82d8; }
 
+div.title p {
+  font-weight: 700; }
+
 .downloads {
   background-color: #fefefe; }
   .downloads h1 {
@@ -245,10 +250,11 @@ header {
     min-height: 100px;
     cursor: pointer; }
   .downloads .hidden-section {
-    background-color: rgba(75, 130, 216, 0.9);
+    background-color: #4b82d8;
     color: white; }
     .downloads .hidden-section pre {
-      color: black; }
+      color: white;
+      text-align: left; }
     .downloads .hidden-section img {
       max-height: 50px;
       min-height: 30px;
@@ -261,12 +267,14 @@ header {
   .downloads .distributions {
     margin-bottom: 30px;
     border: 1px solid #fff; }
+  .downloads .tips {
+    font-style: italic;
+    font-size: 0.8rem; }
 
 .highlight-bash {
-  border: 1px solid #e1e4e5;
-  padding: 0px;
+  padding: 0px 0 0 20px;
   overflow-x: auto;
-  background: #fff;
+  background-color: #363636;
   margin: 1px 0 24px 0; }
 
 .contribution {
@@ -369,7 +377,7 @@ footer {
     display: block; }
 
   header {
-    margin-top: 75.3667px; }
+    margin-top: 72.8px; }
 
   .services h1, .features h1, .downloads h1, .contribution h1, .keep-in h1 {
     font-size: 3rem; }
@@ -455,6 +463,6 @@ footer {
     padding-right: 5rem; } }
 @media (width: 980px) {
   header {
-    margin-top: 105.967px; } }
+    margin-top: 72.8px; } }
 
 /*# sourceMappingURL=style.css.map */

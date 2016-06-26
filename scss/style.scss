@@ -16,9 +16,6 @@ ul{
 nav{
 	background-color: #363636;
 	color: white;
-	// height: 80px;
-	color:#FFF;
-	// padding:.5em;
 	position:absolute;
 	top:0;
 	width:100%;
@@ -28,11 +25,18 @@ nav{
 		text-decoration: none;
 		color: white;
 	}
+
+	.logo-home{
+		img{
+			padding: 0 10px 0 0;
+			width: 50px;
+		}
+	}
 }
 
 .fixed {
     position:fixed;
-    background-color: rgba(54, 54, 54, 0.95);
+    background-color: rgba(54, 54, 54, 1);
     .logo-home{
     	img{
     		padding: 0 10px 0 0;
@@ -161,7 +165,7 @@ nav{
 
 header{
 	position: relative;
-	margin-top: 109.2px;
+	margin-top: 72.8px;
 }
 
 .controls{
@@ -319,8 +323,14 @@ position: relative;
 .compare-table .column {
 	color: black;
     background-color: white;
-    border: solid 2px #4b82d8;
+    border: solid 2px #4b82d8;    
 }
+
+div.title p{
+	font-weight: 700;
+}
+
+
 
 .downloads{
 	background-color: #fefefe;
@@ -350,10 +360,11 @@ position: relative;
 	}
 
 	.hidden-section{
-		background-color: rgba(75,130,216,0.9);
+		background-color: rgba(75,130,216,1);
 		color: white;
 		pre{
-			color: black;
+			color: white;	
+			text-align: left;		
 		}
 		img{
 			max-height: 50px;
@@ -372,14 +383,21 @@ position: relative;
 		margin-bottom: 30px;
 		border: 1px solid #fff;
 	}
+
+	.tips{
+		font-style: italic;
+		font-size: 0.8rem;
+	}
 }
 
 
+
+
 .highlight-bash{
-	border: 1px solid #e1e4e5;
-	padding: 0px;
+	// border: 1px solid #e1e4e5;
+	padding: 0px 0 0 20px;
 	overflow-x: auto;
-	background: #fff;
+	background-color: rgba(54, 54, 54, 1);
 	margin: 1px 0 24px 0;
 }
 
