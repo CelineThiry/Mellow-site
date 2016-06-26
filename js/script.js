@@ -74,12 +74,30 @@ $(document).ready(function() {
                 .top - 64
         }, 1000);
     });
+    // Logo home
+    $(".logo-home").on('click', function(event) {
+        console.log('home is cliqued');
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("body").offset()
+                .top - 72
+        }, 1000);
+    });
+
+    $(".go-up").on('click', function(event) {
+        console.log('home is cliqued');
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("body").offset()
+                .top - 72
+        }, 1000);
+    });
 
     /* Dynamic top menu positioning
      *
      */
 
-    var num = 100; //number of pixels before modifying styles
+    var num = 1; //number of pixels before modifying styles
 
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > num) {
@@ -87,6 +105,28 @@ $(document).ready(function() {
         } else {
             $('nav').removeClass('fixed');
         }
+    });
+
+
+    // Show go-up button when page is at 600px
+    var Mynum = 600 //number of pixels before modifying styles
+
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > Mynum) {
+            $('.go-up').addClass('show');
+        } else {
+            $('.go-up').removeClass('show');
+        }
+    });
+
+    //animation on the go-up button when mouseover
+    $(".go-up").on('mouseover', function(event) {
+        console.log('go-up is on hover');
+        event.preventDefault();
+        $(this).addClass('active');
+        $(this).on('mouseout',function(){
+             $(this).removeClass('active');
+        });
     });
 
 

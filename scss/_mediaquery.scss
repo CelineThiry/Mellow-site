@@ -51,6 +51,19 @@
 			width: 32px;
 		}
 	}
+
+	.social-media{
+		padding-top: 10px;
+		text-align: left;
+	}
+
+	.credits{
+		text-align: left;
+	}
+
+	footer div.go-up.show{
+		display: none;
+	}
 }
 
 @media (min-width: 800px){
@@ -137,12 +150,12 @@
 
 @media (min-width: 1900px){
 	.slider{
-		min-height: 1200px;
+		min-height: 800px;
 	}
 	.above-slider{
-		min-height: 1200px;
-		padding-left: 5rem;
-		padding-right: 5rem;
+		min-height: 800px;
+		padding-right: 500px;
+		padding-left: 500px;		
 	}
 
 }
@@ -151,5 +164,16 @@
 	header{
 		margin-top: 72.8px;
 	}
+	footer div.go-up{
+		display: none;
+	}
+
+	footer{
+		li{
+			padding-right: 10px;
+		}
+	}
+
+
 	
 }
